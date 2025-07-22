@@ -161,4 +161,14 @@ If you have any questions, please visit [issues](https://github.com/HolderXJTU/D
 
 # Citation
 
-For usage of the package and associated manuscript, please cite according to the enclosed [citation.bib](./citation.bib).
+If you find our work useful, please consider citing:
+
+
+```
+@article{Ma2025Decoding,
+  title={Decoding Semantic Concept Through Brain fMRI Spatio-Temporal Voxel Patterns},
+  author={Ma, Yongqiang and Jing, Haodong and Zheng, Nanning},
+    journal={Nature Computational Science under review},
+  year={2025}
+}
+```
