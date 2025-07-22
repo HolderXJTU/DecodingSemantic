@@ -7,8 +7,8 @@
 ## Contents
 
 - [Overview](#overview)
-- [Repository  Contents](#repo-contents)
-- [Environmental Requirements](#system-requirements)
+- [Repository Contents](#repository-contents)
+- [Environmental Requirements](#environmental-requirements)
 - [Installation Guide](#installation-guide)
 - [Demo](#demo)
 - [Results](#results)
@@ -34,7 +34,7 @@ Cognitive neuroscience bridges insights from human brain mechanisms to inspire a
 
 ## Hardware Requirements
 
-Our model is deployed on a server with 4 cores, 32g memory, and dual RTX4090 cards.
+Our model is deployed on a server with 4 cores, 32g memory, and dual RTX4090 GPUs.
 
 ## Software Requirements
 
@@ -42,52 +42,21 @@ Linux: Ubuntu 22.04
 
 
 # Installation Guide
+Run ``setup.sh`` to quickly create a conda environment that contains the packages necessary to run our scripts; activate the environment with conda activate our work.
 
-## Stable Release
-
-`lolR` is available in a stable release on CRAN:
 
 ```
-install.packages('lolR')
+. setup.sh
 ```
 
-## Development Version
-
-### Package dependencies
-
-Users should install the following packages prior to installing `lolR`, from an `R` terminal:
-
+Additional environments needed to run all the code:
 ```
-install.packages(c('ggplot2', 'abind', 'irlba', 'knitr', 'rmarkdown', 'latex2exp', 'MASS', 'randomForest'))
+pip install open_clip_torch
+
+pip install transformers==4.28.0.dev0
+pip install diffusers==0.24.0
 ```
 
-which will install in about 30 seconds on a machine with the recommended specs.
-
-The `lolR` package functions with all packages in their latest versions as they appear on `CRAN` on December 13, 2017. Users can check [CRAN snapshot](https://mran.microsoft.com/timemachine/) for details. The versions of software are, specifically:
-```
-abind_1.4-5
-latex2exp_0.4.0
-ggplot2_2.2.1
-irlba_2.3.1
-Matrix_1.2-3
-MASS_7.3-47
-randomForest_4.6-12
-```
-
-If you are having an issue that you believe to be tied to software versioning issues, please drop us an [Issue](https://github.com/neurodata/lol/issues). 
-
-### Package Installation
-
-From an `R` session, type:
-
-```
-require(devtools)
-install_github('neurodata/lol', build_vignettes=TRUE, force=TRUE)  # install lol with the vignettes
-require(lolR)
-vignette("lol", package="lolR")  # view one of the basic vignettes
-```
-
-The package should take approximately 40 seconds to install with vignettes on a recommended computer. 
 
 # Demo
 
