@@ -63,31 +63,30 @@ pip install diffusers==0.24.0
 ## Visual-Semantic Retrieval
 We provide a script for training on the dataset we collected. Please modify the dataset path and run:
 ```
-cd Retrieval/
-python retrieval_joint_train_medformer.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
+cd DeocdingSemantic/
+python retrieval_train.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
 ```
 
 Additionally, replicating the results of other subjects:
 ```
-cd Retrieval/
-python retrieval_joint_train_MEG_rerank_medformer.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
+cd DeocdingSemantic/
+python retrieval_allsub.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
 ```
 We provide the script to evaluation the models visual-semantic retrieval:
 ```
-cd eval/
-FLORA_inference.ipynb
+cd DeocdingSemantic/
+test.py
 ```
 
 ## Visual Reconstruction
 We provide quick training and inference scripts for visual reconstruction. Please modify your data set path and run zero-shot on test dataset:
 ```
-# Train and get multimodal neural embeddings aligned with clip embedding:
-python train_unified_encoder_highlevel_diffprior.py --modalities ['eeg', 'meg', 'fmri'] --gpu cuda:0  --output_dir ./outputs/contrast
+# Get visual neural embeddings aligned with clip embedding:
+python train.py --visual modalities --gpu cuda:0  --output_dir ./outputs/contrast
 ```
-
 ```
 # Reconstruct images by assigning modalities and subjects:
-python FLORA_inference_reconst.py
+python test.py
 ```
 ```
 
