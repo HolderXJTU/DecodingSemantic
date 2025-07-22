@@ -10,6 +10,7 @@
 - [Repository Contents](#repository-contents)
 - [Environmental Requirements](#environmental-requirements)
 - [Installation Guide](#installation-guide)
+- [Experiment Design](#experiment-design)
 - [Demo](#demo)
 - [Results](#results)
 - [License](./LICENSE)
@@ -56,6 +57,7 @@ pip install open_clip_torch
 pip install transformers==4.28.0.dev0
 pip install diffusers==0.24.0
 ```
+# Experiment Design
 
 
 # Demo
