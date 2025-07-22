@@ -58,7 +58,11 @@ pip install transformers==4.28.0.dev0
 pip install diffusers==0.24.0
 ```
 # Experiment Design
+In this research, we designed a brain cognition experiment that employed multi-conceptual semantic information as visual stimuli. Subjects were instructed to observe and comprehend the presented stimuli, while fMRI data were recorded for subsequent analysis. The experiment adopted a block design paradigm, with the semantic stimuli comprising 10 groups of semantic concepts. Of these, 5 groups represented ``natural conceptual semantics'', and the remaining 5 corresponded to ``unnatural conceptual semantics''. Each group contained three words, resulting in a total of 30 distinct semantic categories. All stimulus words were presented in Chinese, with the semantics of words within the same group sharing similar features, as illustrated in Figure below.
 
+In the first experimental phase, individual semantic stimulus images were presented on a screen, and subjects were instructed to observe them while their fMRI brain signals were recorded. The stimulus images were flashed at a frequency of 8 Hz to enhance cortical stimulation. Each subject was exposed to 30 unique words across 120 trials, with the total duration of this phase lasting approximately 15 minutes.
+
+In the second experimental phase, pairs of semantic concepts were simultaneously displayed on the screen, Subjects were tasked with determining whether the two presented words represented the same semantic concept while their fMRI brain signals were recorded. Subjects pressed a button if the two words belonged to the same concept and refrained from any action if they did not. Similar to the first phase, the stimulus images were flashed at a frequency of 8 Hz. Each word pair was presented in 240 trials during a single experimental session, with the total duration of this phase lasting approximately 20 minutes.
 
 # Demo
 
