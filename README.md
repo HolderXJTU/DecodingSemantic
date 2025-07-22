@@ -34,40 +34,12 @@ Cognitive neuroscience bridges insights from human brain mechanisms to inspire a
 
 ## Hardware Requirements
 
-The `lol` package requires only a standard computer with enough RAM to support the operations defined by a user. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend a computer with the following specs:
-
-RAM: 16+ GB  
-CPU: 4+ cores, 3.3+ GHz/core
-
-The runtimes below are generated using a computer with the recommended specs (16 GB RAM, 4 cores@3.3 GHz) and internet of speed 25 Mbps.
+Our model is deployed on a server with 4 cores, 32g memory, and dual RTX4090 cards.
 
 ## Software Requirements
 
-### OS Requirements
+Linux: Ubuntu 22.04  
 
-The package development version is tested on *Linux* operating systems. The developmental version of the package has been tested on the following systems:
-
-Linux: Ubuntu 16.04  
-Mac OSX:  
-Windows:  
-
-The CRAN package should be compatible with Windows, Mac, and Linux operating systems.
-
-Before setting up the `lolR` package, users should have `R` version 3.4.0 or higher, and several packages set up from CRAN.
-
-#### Installing R version 3.4.2 on Ubuntu 16.04
-
-the latest version of R can be installed by adding the latest repository to `apt`:
-
-```
-sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
-gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-gpg -a --export E084DAB9 | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install r-base r-base-dev
-```
-
-which should install in about 20 seconds.
 
 # Installation Guide
 
