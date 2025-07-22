@@ -1,12 +1,7 @@
 # Linear Optimal Low Rank Projection (lolR)
 
 
-[![CRAN Status Badge](http://www.r-pkg.org/badges/version/lolR)](http://cran.r-project.org/web/packages/lolR)
-[![arXiv shield](https://img.shields.io/badge/arXiv-1709.01233-red.svg?style=flat)](https://arxiv.org/abs/1709.01233)
-[![Travis-CI Build Status](https://travis-ci.org/neurodata/lol.svg?branch=master)](https://travis-ci.org/neurodata/lol)
-[![Codecov status](https://codecov.io/gh/neurodata/lol/branch/master/graph/badge.svg)](https://codecov.io/gh/neurodata/lol)
-[![Downloads badge](https://cranlogs.r-pkg.org/badges/lolR)](https://cranlogs.r-pkg.org/badges/lolR)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1246979.svg)](https://doi.org/10.5281/zenodo.1246979)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 
 
 ## Contents
@@ -23,7 +18,7 @@
 
 # Overview
 
-Supervised learning techniques designed for the situation when the dimensionality exceeds the sample size have a tendency to overfit as the dimensionality of the data increases. To remedy this high dimensionality; low sample size (HDLSS) situation, we attempt to learn a lower-dimensional representation of the data before learning a classifier. That is, we project the data to a situation where the dimensionality is more manageable, and then we are able to better apply standard classification or clustering techniques since we will have fewer dimensions to overfit. A number of previous works have focused on how to strategically reduce dimensionality in the unsupervised case, yet in the supervised HDLSS regime, few works have attempted to devise dimensionality reduction techniques that leverage the labels associated with the data. In this package, we provide several methods for feature extraction, some utilizing labels and some not, along with easily extensible utilities to simplify cross-validative efforts to identify the best feature extraction method. Additionally, we include a series of adaptable benchmark simulations to serve as a standard for future investigative efforts into supervised HDLSS. Finally, we produce a comprehensive comparison of the included algorithms across a range of benchmark simulations and real data applications.
+Cognitive neuroscience bridges insights from human brain mechanisms to inspire artificial intelligence. Functional magnetic resonance imaging (fMRI) is widely utilized to investigate brain activity patterns, yet the modeling of cortical mechanisms for classifying semantic concepts embedded in visual stimuli remains underexplored. In this study, we designed a controlled cognitive experiment to analyze visual semantic processing, collecting fMRI data from 15 subjects. A spatio-temporal graph network was developed to capture dynamic features of semantic brain regions, enabling the construction of a functional network for semantic concept classification and prediction. Leveraging self-supervised learning, our decoding framework reconstructed visual stimuli and compared reconstructed images with predicted category outputs, ultimately deriving semantic representations. The experimental results highlight the superiority of the model in decoding the fMRI data, surpassing existing methods in accuracy and semantic alignment. This unified framework integrates vision and semantics, providing biologically interpretable insights into brain-inspired semantic cognition.
 
 # Repo Contents
 
