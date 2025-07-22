@@ -23,7 +23,7 @@ Cognitive neuroscience bridges insights from human brain mechanisms to inspire a
 # Repository Contents
 
 - [config](./config): Configuration files directory.
-- [data](./data): We have provided some of the data on GitHub. For the complete data set, please visit here.
+- [data](./data): We have provided some of the data on GitHub. For the complete data set, please visit [here](https://huggingface.co/datasets/AthensJ/DecodingSemantics/tree/main).
 - [README.md](./README.md): Project documentation.
 - [model.py](./model.py): Model structure definitions.
 - [test.py](./test.py): Testing script.
@@ -81,14 +81,16 @@ test.py
 ## Visual Reconstruction
 We provide quick training and inference scripts for visual reconstruction. Please modify your data set path and run zero-shot on test dataset:
 ```
-# Get visual neural embeddings aligned with clip embedding:
+#Get visual neural embeddings aligned with clip embedding:
 python train.py --visual modalities --gpu cuda:0  --output_dir ./outputs/contrast
 ```
 ```
-# Reconstruct images by assigning modalities and subjects:
+#Reconstruct images by assigning modalities and subjects:
 python test.py
 ```
-```
+
+
+
 
 # Results
 
