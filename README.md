@@ -104,7 +104,11 @@ python test.py
 
 # Results
 
-In this [benchmark comparison](http://docs.neurodata.io/lol/lol-paper/figures/real_data.html), we show that LOL does better than all linear embedding techniques in supervised HDLSS settings when dimensionality is high (d > 100, ntrain <= d) on 20 benchmark problems from the [UCI](https://archive.ics.uci.edu/ml/index.php) and [PMLB](https://github.com/EpistasisLab/penn-ml-benchmarks) datasets. LOL provides a good tradeoff between maintaining the class conditional difference (good misclassification rate) in a small number of dimensions (low number of embedding dimensions).
+## Image reconstruction results & Brain projections of semantic concepts
+
+## Semantic Concept Classification Results
+
+## Quantitative Comparison of Different Method Performance
 
 # License
 
