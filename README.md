@@ -106,12 +106,18 @@ python test.py
 
 ## Image reconstruction results & Brain projections of semantic concepts
 <div style="display: flex; justify-content: center;">
-    <img src="results1.png" alt="results1" style="width: 50%; height: auto;"/>
+    <img src="reconstruction.png" alt="results1" style="width: 50%; height: auto;"/>
 </div>
 
 ## Semantic Concept Classification Results
+<div style="display: flex; justify-content: center;">
+    <img src="classification.png" alt="results2" style="width: 30%; height: auto;"/>
+</div>
 
 ## Quantitative Comparison of Different Method Performance
+<div style="display: flex; justify-content: center;">
+    <img src="reconstruction_qua.png" alt="results3" style="width: 50%; height: auto;"/>
+</div>
 
 # License
 
