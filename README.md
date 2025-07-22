@@ -7,8 +7,8 @@
 ## Contents
 
 - [Overview](#overview)
-- [Repo Contents](#repo-contents)
-- [System Requirements](#system-requirements)
+- [Repository  Contents](#repo-contents)
+- [Environmental Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
 - [Demo](#demo)
 - [Results](#results)
