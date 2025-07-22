@@ -60,33 +60,35 @@ pip install diffusers==0.24.0
 
 # Demo
 
-## Functions
-
-For interactive demos of the functions, please check out the vignettes built into the package. They can be accessed as follows:
-
+## Visual-Semantic Retrieval
+We provide a script for training on the dataset we collected. Please modify the dataset path and run:
 ```
-require(lolR)
-vignette('lol')
-vignette('pca')
-vignette('cpca')
-vignette('lrcca')
-vignette('mdp')
-vignette('xval')
-vignette('qoq')
-vignette('simulations')
-vignette('nearestCentroid')
+cd Retrieval/
+python retrieval_joint_train_medformer.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
 ```
 
-## Extending the lolR Package
+Additionally, replicating the results of other subjects:
+```
+cd Retrieval/
+python retrieval_joint_train_MEG_rerank_medformer.py --logger True --gpu cuda:0  --output_dir ./outputs/contrast
+```
+We provide the script to evaluation the models visual-semantic retrieval:
+```
+cd eval/
+FLORA_inference.ipynb
+```
 
-The lolR package makes many useful resources available (such as embedding and cross-validation) for simple extension. 
-
-To extend the lolR package, check out the vignettes:
+## Visual Reconstruction
+We provide quick training and inference scripts for visual reconstruction. Please modify your data set path and run zero-shot on test dataset:
+```
+# Train and get multimodal neural embeddings aligned with clip embedding:
+python train_unified_encoder_highlevel_diffprior.py --modalities ['eeg', 'meg', 'fmri'] --gpu cuda:0  --output_dir ./outputs/contrast
+```
 
 ```
-require(lolR)
-vignette('extend_embedding')
-vignette('extend_classification')
+# Reconstruct images by assigning modalities and subjects:
+python FLORA_inference_reconst.py
+```
 ```
 
 # Results
