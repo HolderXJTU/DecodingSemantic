@@ -20,7 +20,7 @@
 
 Cognitive neuroscience bridges insights from human brain mechanisms to inspire artificial intelligence. Functional magnetic resonance imaging (fMRI) is widely utilized to investigate brain activity patterns, yet the modeling of cortical mechanisms for classifying semantic concepts embedded in visual stimuli remains underexplored. In this study, we designed a controlled cognitive experiment to analyze visual semantic processing, collecting fMRI data from 15 subjects. A spatio-temporal graph network was developed to capture dynamic features of semantic brain regions, enabling the construction of a functional network for semantic concept classification and prediction. Leveraging self-supervised learning, our decoding framework reconstructed visual stimuli and compared reconstructed images with predicted category outputs, ultimately deriving semantic representations. The experimental results highlight the superiority of the model in decoding the fMRI data, surpassing existing methods in accuracy and semantic alignment. This unified framework integrates vision and semantics, providing biologically interpretable insights into brain-inspired semantic cognition.
 
-# Repo Contents
+# Repository Contents
 
 - [R](./R): `R` package code.
 - [docs](./docs): package documentation, and usage of the `lolR` package on many real and simulated data examples.
@@ -29,7 +29,7 @@ Cognitive neuroscience bridges insights from human brain mechanisms to inspire a
 - [vignettes](./vignettes): `R` vignettes for R session html help pages.
 
 
-# System Requirements
+# Environmental Requirements
 
 ## Hardware Requirements
 
