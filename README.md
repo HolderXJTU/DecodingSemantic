@@ -1,4 +1,4 @@
-# Linear Optimal Low Rank Projection (lolR)
+# Decoding Semantic Concept Through Brain fMRI Spatio-Temporal Voxel Patterns
 
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
