@@ -22,11 +22,12 @@ Cognitive neuroscience bridges insights from human brain mechanisms to inspire a
 
 # Repository Contents
 
-- [R](./R): `R` package code.
-- [docs](./docs): package documentation, and usage of the `lolR` package on many real and simulated data examples.
-- [man](./man): package manual for help in R session.
-- [tests](./tests): `R` unit tests written using the `testthat` package.
-- [vignettes](./vignettes): `R` vignettes for R session html help pages.
+- [config](./config): Configuration files directory.
+- [data](./data): We have provided some of the data on GitHub. For the complete data set, please visit here.
+- [README.md](./README.md): Project documentation.
+- [model.py](./model.py): Model structure definitions.
+- [test.py](./test.py): Testing script.
+- [train.py](./train.py): Training script.
 
 
 # Environmental Requirements
