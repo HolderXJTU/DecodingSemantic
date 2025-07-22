@@ -105,6 +105,9 @@ python test.py
 # Results
 
 ## Image reconstruction results & Brain projections of semantic concepts
+<div style="display: flex; justify-content: center;">
+    <img src="results1.png" alt="results1" style="width: 50%; height: auto;"/>
+</div>
 
 ## Semantic Concept Classification Results
 
